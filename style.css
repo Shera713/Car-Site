@@ -13,8 +13,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 a{
@@ -30,23 +29,10 @@ h1{
 }
 section{
     background-color: #fff;
-    transition: all 300ms ease;
 }
 
-.container{
-    padding: 50px 0 ;
-    width: 100%;
 
-}
-
-.row{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto ;
-    padding: 0 12px ;
-
-}
-
+*/
 
 /*
 NAV
@@ -58,36 +44,39 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1299px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 100px;
     padding: 0 20px;
 }
-.nav__row{
-    padding: 0 50px;
-    height: 165px;
-    align-items: center;
-}
 
-.nav__links{
-    font-size: 18px;
-    font-weight: 600;
+.nav__link--list{
     display: flex;
-  
+
 }
 
 .nav__link{
+    margin: 0 12px;
     text-decoration: none;
   
+}
+.nav__link-anchor{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.nav__link-anchor--black{
+color: black;
 }
 
 .nav__link--primary{
     text-transform: uppercase;
     padding: 10px 32px;
-    margin-top: 2px;
     border-radius: 9999px;
     border-color: none;
-    background-color: #6415FF;
+    background-color: #6030b1;
     color: #fff;
     font-size: 16px;
     width: auto;
@@ -108,22 +97,31 @@ nav{
     position: absolute;
     bottom: -3px;
     right: 0;
+    width: 100%;
     background-color: #6030b1;
     transition: all 300ms ease;
 
 }
 
+.link__hover-effect:hover:after{
+    left: 0;
+    width: 100%;
+}
 
 
 /*
 HEADER/LANDING
 */
 
+#landing-page{
+    min-height: 100vh;
+}
+
 .landing__title{
         text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
         width: 100%;
         max-width: 1000px;
         color: #6030b1;
@@ -131,11 +129,9 @@ HEADER/LANDING
 }
 
 .landing__container{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
+ flex-direction: column;
 }
 
 .landing__decscription{
@@ -145,8 +141,9 @@ HEADER/LANDING
 }
 
 .landing__img{
-   bottom: 80px;
    height: 50vh;
+   margin-left: 200px;
+   margin-top: 100px;
 }
 
 .input__wrapper--text{
@@ -162,6 +159,7 @@ HEADER/LANDING
 .input-wrapper{
     background-color: #fff;
     width: 100%;
+    margin: 0 auto;
     max-width: 448px;
     height: 68px;
     position: relative;
@@ -186,6 +184,6 @@ HEADER/LANDING
     transition: all 300ms;
 }
 
-.fa-magnifying-glass{
-    color: #7cbee8;
+.fa-solid {
+    color: #f0f8fd;
 }
