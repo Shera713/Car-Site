@@ -197,6 +197,7 @@ HEADER/LANDING
     bottom: 0;
     border: none;
     background-color: #6030b1;
+    color:rgb(39, 241, 238) ;
     font-weight: bolder;
     transition: all 300ms;
 }
@@ -212,6 +213,7 @@ HEADER/LANDING
     color: #f0f8fd;
     overflow:visible;
     display: block;
+    
 }
 
 /*
