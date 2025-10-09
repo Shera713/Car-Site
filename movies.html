@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="movies__search">
+        <a href="./index.html">
+          <button>← Back</button>
+        </a>
+
+        <div class="movies__search--container">
+          <label class="movies__search--label"> Search by Id </label>
+          <input type="text" placeholder="1" onchange="onSeachChange(event)" />
+        </div>
+      </div>
+
+      <div class="movie-list">
+        <div class="movie">
+          <div class="movie__title">Movie Title</div>
+          <p class="movie__body">Movie Body</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
