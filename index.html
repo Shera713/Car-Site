@@ -29,7 +29,7 @@
               >Find YOUR Movie</a>
           </li>
           <li class="nav__link">
-            <a href="#new__movies" target="_blank" class="
+            <a href="movies.html" target="_blank" class="
             nav__link--anchor 
             nav__link--primary">NEW RELEASES!</a>
           </li>
@@ -45,9 +45,13 @@
             type="text"
             placeholder="Search by Model, Make or Keyowrd"
             class="input__wrapper--text"
+            onchange="onSearchChange(event)"
           />
           <button class="btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="./movies.html">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            
           </button>
         </div>
 
